@@ -63,6 +63,23 @@
       font-weight: 300;
     }
 
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255,255,255,0.5);
+      box-shadow: 0 0 24px rgba(0,0,0,0.5), 0 0 0 4px rgba(255,255,255,0.06);
+      margin-bottom: 4px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .avatar:hover {
+      transform: scale(1.05);
+      border-color: rgba(255,255,255,0.85);
+      box-shadow: 0 0 32px rgba(255,255,255,0.25), 0 0 0 4px rgba(255,255,255,0.12);
+    }
+
     .title {
       font-size: 2.6rem;
       font-weight: 400;
@@ -193,6 +210,7 @@
 
 <div class="center">
   <div class="clock" id="clock">10:33:41 pm</div>
+  <img class="avatar" src="images/avatar.png" alt="bats" />
   <div class="title">bats</div>
   <div class="icons">
     <!-- Discord -->

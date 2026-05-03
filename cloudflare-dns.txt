@@ -1,0 +1,18 @@
+; Cloudflare DNS import for GitHub Pages — larpers.org
+; In Cloudflare: DNS -> Records -> Import and Export -> Import DNS records.
+; After import: make sure every record is DNS only (gray cloud), not proxied.
+
+$ORIGIN larpers.org.
+$TTL 1
+
+@   IN  A   185.199.108.153
+@   IN  A   185.199.109.153
+@   IN  A   185.199.110.153
+@   IN  A   185.199.111.153
+
+@   IN  AAAA    2606:50c0:8000::153
+@   IN  AAAA    2606:50c0:8001::153
+@   IN  AAAA    2606:50c0:8002::153
+@   IN  AAAA    2606:50c0:8003::153
+
+www IN  CNAME   kittybats.github.io.
